@@ -1,0 +1,47 @@
+﻿@model List<Uplers_Exam.ViewModels.ToDoVM>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <a class="btn btn-primary" asp-action="CreateTask">Create New Task</a>
+</div>
+<hr />
+<div class="table-responsive">
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var task in Model)
+            {
+                <tr>
+                    <td>@task.Title</td>
+                    <td>@task.Description</td>
+                    <td>
+                        <a class="btn btn-sm btn-primary" asp-action="EditTask" asp-route-id="@task.Id">Edit</a>
+                        <a class="btn btn-sm btn-danger" asp-action="DeleteTask" asp-route-id="@task.Id">Delete</a>
+                        @if (task.IsDone)
+                        {
+                            <span class="badge badge-success">Done</span>
+                        }
+                        else
+                        {
+                            <a class="btn btn-sm btn-success" asp-action="MarkAsDone" asp-route-id="@task.Id">Mark as Done</a>
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+
+@section Scripts {
+    @*WE CAN ALSO USE AJAX TO PERFORM THIS*@
+<script src="~/js/home.js" asp-append-version="true"></script>
+}

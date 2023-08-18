@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32126.317
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Uplers_Exam", "Uplers_Exam\Uplers_Exam.csproj", "{18A5DF55-21E2-479D-8374-BD05E028BDFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Uplers_Exam.Tests", "Uplers_Exam.Tests\Uplers_Exam.Tests.csproj", "{01914C2C-B868-4D5A-9B85-8CBB66CDE9BB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{34E56659-4B6D-4237-AFA0-A86C17CA136D}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{18A5DF55-21E2-479D-8374-BD05E028BDFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18A5DF55-21E2-479D-8374-BD05E028BDFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18A5DF55-21E2-479D-8374-BD05E028BDFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18A5DF55-21E2-479D-8374-BD05E028BDFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01914C2C-B868-4D5A-9B85-8CBB66CDE9BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01914C2C-B868-4D5A-9B85-8CBB66CDE9BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01914C2C-B868-4D5A-9B85-8CBB66CDE9BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01914C2C-B868-4D5A-9B85-8CBB66CDE9BB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {68A1DAEA-9740-41FF-B641-8D7DEC5C30D6}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,37 @@
+﻿@model Uplers_Exam.ViewModels.ToDoVM
+
+<div class="card">
+    <div class="card-header">
+        Edit Task
+        <a asp-action="Index" class="btn btn-secondary mt-3 float-end">Back to List</a>
+
+    </div>
+    <div class="card-body">
+        <form asp-action="EditTask" asp-route-id="@Model.Id" method="post">
+            <input type="hidden" asp-for="Id">
+            <div class="form-group">
+                <label for="Title">Title:</label>
+                <input type="text" id="Title" class="form-control" asp-for="Title" required>
+            </div>
+            <div class="form-group">
+                <label for="Description">Description:</label>
+                <textarea id="Description" class="form-control" asp-for="Description"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="DueDate">Due Date:</label>
+                <input type="date" id="DueDate" class="form-control" asp-for="DueDate">
+            </div>
+            <div class="form-group">
+                <label for="Priority">Priority:</label>
+                <select id="Priority" class="form-control" asp-for="Priority">
+                    <option value="0">Low</option>
+                    <option value="1">High</option>
+                </select>
+            </div>
+            <hr />
+            <button type="submit" class="btn btn-primary">Save Changes</button>
+        </form>
+
+    </div>
+</div>
+
